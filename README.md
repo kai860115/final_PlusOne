@@ -6,11 +6,9 @@
 
 ## Deployed Link
 
-[https://liferecorder.herokuapp.com](https://liferecorder.herokuapp.com)
 
 ## Github Link
 
-[https://liferecorder.herokuapp.com](https://liferecorder.herokuapp.com)
 
 ## How to use
 
