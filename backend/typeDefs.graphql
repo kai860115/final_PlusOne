@@ -1,0 +1,63 @@
+scalar DateTime
+
+type Query {
+  user(id: ID!): User!
+  users: [User!]!
+  me: User
+  myEvents: [Event!]!
+  createByMe: [Event!]!
+  events: [Event!]!
+  event(id:ID!): Event!
+}
+
+type Mutation {
+  signUp(data: SignUpInput!): User
+  signIn(email: String!, password: String!): Token
+  createEvent(data: CreateEventInput!): Event
+  updateEvent(id:ID!, data: updateEventInput!): Event
+  joinEvent(id: ID!): Event
+  leaveEvent(id: ID!): Event
+  deleteEvent(id: ID!): Event
+}
+
+input SignUpInput {
+  email: String!
+  username: String!
+  name: String!
+  password: String!
+}
+
+input CreateEventInput {
+  title: String!
+  descript: String!
+  date: String!
+}
+
+input updateEventInput {
+  title: String!
+  descript: String!
+  date: String!
+}
+
+type User {
+  id: ID!
+  email: String!
+  username: String!
+  name: String!
+  events: [Event!]!
+}
+
+type Event {
+  id: ID!
+  title: String!
+  descript: String!
+  members: [User!]!
+  createBy: User!
+  date: DateTime!
+}
+
+type Token {
+  id: ID!
+  username: String!
+  token: String!
+}
