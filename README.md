@@ -4,11 +4,12 @@
 
 這是一個讓使用者註冊登入揪團的網站，使用者可以當主辦人新增自己的活動，也可以看到所有的活動並選擇想要的+1
 
-## Deployed Link
+## Demo Link
 
 
 ## Github Link
 
+[https://github.com/kai860115/final_PlusOne](https://github.com/kai860115/final_PlusOne)
 
 ## How to use
 
