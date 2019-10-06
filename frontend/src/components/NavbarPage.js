@@ -18,7 +18,7 @@ class NavbarPage extends Component {
     if (!localStorage.getItem('token')) {
       return (
         <Navbar className="navbar-dark bg-dark" light expand="md">
-          <NavbarBrand href="/"><h3>Activities</h3></NavbarBrand>
+          <NavbarBrand href="/"><h3>Plus One</h3></NavbarBrand>
           <Nav className="ml-auto" navbar>
             <NavItem>
               <NavLink tag={Link} to="/login/" >Login</NavLink>
