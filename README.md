@@ -5,12 +5,7 @@
 這是一個讓使用者註冊登入揪團的網站，使用者可以當主辦人新增自己的活動，也可以看到所有的活動並選擇想要的+1
 
 ## Demo Link
-<<<<<<< HEAD
 [https://youtu.be/UZU709YprG4](https://youtu.be/UZU709YprG4)
-=======
-
-https://youtu.be/UZU709YprG4
->>>>>>> dcd6ddd1efce7b1576923f9810c5852aa19f06a4
 
 ## Github Link
 
