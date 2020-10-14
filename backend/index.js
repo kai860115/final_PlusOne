@@ -19,7 +19,7 @@ const SECRET = '12345678'
 
 async function start() {
   const app = express()
-  const MONGO_DB = process.env.DB_HOST
+  const MONGO_DB = process.env.MONGO_URI
   const pubsub = new PubSub()
 
   try {
