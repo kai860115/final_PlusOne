@@ -29,7 +29,7 @@ if (localStorage['apollo-cache-persist']) {
 
 // Create an http link:
 const httpLink = new HttpLink({
-  uri: 'http://localhost:4000/graphql'
+  uri: `http://${window.location.hostname}:4000/graphql`
 })
 
 const authLink = setContext((_, { headers }) => {
@@ -48,7 +48,7 @@ const httpAuthLink = authLink.concat(httpLink)
 
 // Create a WebSocket link:
 const wsLink = new WebSocketLink({
-  uri: `ws://localhost:4000/graphql`,
+  uri: `ws://${window.location.hostname}:4000/graphql`,
   options: { reconnect: true }
 })
 
